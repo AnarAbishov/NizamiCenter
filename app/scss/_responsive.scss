@@ -1,0 +1,186 @@
+@media only screen and (max-width: 768px) {
+    body {
+      header{
+          nav{
+              z-index: 9999 !important;
+              background: white !important;
+              padding: 0px !important;
+              margin-bottom: 0 !important;
+              margin-top: 0 !important;
+              height: initial !important;
+              .navbar-brand{
+                margin-left: 10px;
+              }
+              .navbar-toggler{
+                margin-right: 10px;
+              }
+              .navbar-collapse{
+                    z-index: 9999 !important;
+                    background: $main-color !important;
+                    height: 88vh !important;
+                  ul{
+                    background: $main-color !important;
+                      li{
+                        padding: 16px 0 !important;
+                        color: white !important;
+                        margin: 10px auto !important;
+                        &:before{
+                            width: 0px !important;
+                            height: 0px !important;
+                        }
+                        a{
+                            text-transform: none;
+                            font-size: 18px;
+                            line-height: 0 !important;
+                            letter-spacing: 0 !important;
+                            color: white !important;
+
+                        }
+                        button{
+                            background: none !important;
+                            border: none !important;
+                            margin-top: 0 !important;
+                            margin-bottom: 0 !important;
+                            padding-top: 0 !important;
+                            padding-bottom: 0 !important;
+                            line-height: 0 !important;
+                            // margin-left: 5px;
+                            display: none;
+                            img{
+                                
+                            }
+                        }
+                        &:last-child {
+                          display: none;
+                        }
+                      }
+                      .active{
+                        position: relative;
+                        a{
+                          &::after{
+                            content: "";
+                            width: 40px;
+                            height: 1px;
+                            position: absolute;
+                            top: 24px; 
+                            left: -66px;
+                            background-color: #fff;
+                            margin-left: 0 !important;
+                          }
+                          &::before{
+                            content: "";
+                            width: 40px;
+                            height: 1px;
+                            position: absolute;
+                            top: 24px; 
+                            right: -66px;
+                            background-color: #fff;
+                          }
+                        }
+                       
+                      }
+                  }
+              }
+          }
+      }
+      .news, .team{
+        .sidebar{
+          display: none !important;
+        }
+        .content{
+          height: unset !important; 
+          width: 100% !important;
+          .slider{
+            height: unset !important; 
+            .swiper-container{
+              height: unset !important; 
+              .swiper-wrapper{
+                display: flex;
+                flex-direction: column;
+                height: unset !important; 
+                .swiper-slide{
+                  height: unset !important; 
+                  width: 100% !important;
+                  margin-bottom: 30px;
+                  .carde{
+                    width: 100% !important;
+                    padding: 0 10px;
+                    img{
+                      // max-width: 100% !important;
+                      padding-left: 0px !important;
+                    }
+                    .carde-body{
+                      width:  100% !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .home{
+        .sidebar{
+          display: none !important;
+        }
+        .content{
+          height: unset !important; 
+          width: 100% !important;
+          .slider{
+            height: unset !important; 
+            .swiper-container{
+              height: unset !important;
+              .swiper-wrapper{
+                height: unset !important;
+                .swiper-slide{
+                  height: 87vh !important;
+                  align-items: center !important;
+                  padding: 39px 49px!important;
+                }
+              }
+              .swiper-pagination{
+                display: block !important;
+                .swiper-pagination-bullet{
+                  background: white;
+                  outline: none;
+                  transition: all .3s linear;
+                }
+                .swiper-pagination-bullet-active{
+                  width: 12px;
+                  border-radius: 8px;
+                  transition: all .3s linear;
+                }
+            }
+            }
+          }
+        }
+      }
+      .middle-about{
+        height: unset !important;
+        flex-direction: column !important;
+        .left{
+          width: 100% !important;
+          height: 300px;
+          .left-text{
+            padding: 10px !important;
+            h4{
+              font-size: 24px;
+            }
+          }
+        }
+        .right{
+          width: 100% !important;
+          overflow: unset !important;
+          .contact-info{
+            padding: 20px 10px !important;
+          }
+          .about-info{
+            padding: 20px 10px !important;
+          }
+        }
+      }
+      .footer{
+        display: none !important;
+      }
+    }
+  }
